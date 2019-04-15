@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>小旋风传记</title>
+    <link rel="stylesheet" type="text/css" href="css/back.css">
+    <script  src="js/tools.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+</head>
+<body>
+    <div class="life_page">
+        <div class="life_title ">
+            “小旋风、户外” 回忆录
+            <div class="superlink">
+                <div class="link_detail">
+                    <a href="index.html">首页</a>
+                </div>
+                <div class="link_detail">
+                    <a href="life.html" >小旋风传记</a>
+                </div>
+                <div class="link_detail">
+                    <a  onclick="alert('还未完成！敬请期待！')">小旋风动图</a>
+                </div>
+            </div>
+        </div>
+        <div class="page_content ">
+            <div class="page_left content_border">
+                <h2>目录</h2>
+                <ul class="life_chapters">
+                    <li class="chapter"><a href='javascript:;' onclick=clickit("life/life_0.html")>概述</a></li>
+                    <li class="chapter"><a href='javascript:;' onclick=clickit("life/life_1.html")>第一章</a></li>
+                    <li class="chapter"><a href='javascript:;' onclick=clickit("life/life_2.html")>第二章</a></li>
+                    <li class="chapter"><a href='javascript:;' onclick=clickit("life/life_3.html")>第三章</a></li>
+                    <li class="chapter"><a href='javascript:;' onclick=clickit("life/life_4.html")>第四章</a></li>
+                    <li class="chapter"><a href='javascript:;' onclick=clickit("life/life_5.html")>第五章</a></li>
+                    <li class="chapter"><a href='javascript:;' onclick=clickit("life/life_6.html")>第六章</a></li>
+                    <li class="chapter"><a href='javascript:;' onclick=clickit("life/life_7.html")>第七章</a></li>
+                    <li class="chapter"><a href='javascript:;' onclick=clickit("life/life_8.html")>第八章</a></li>
+                    <li class="chapter"><a href='javascript:;' onclick=clickit("life/life_9.html")>大结局</a></li>
+                    <li class="chapter"><a href='javascript:;' onclick=clickit("life/life_10.html")>后记</a></li>
+                </ul>
+
+            </div>
+            <div class="page_right content_border">
+                <div class="page_right_content">
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="foot">
+            <label>小旋风、户外治丧委员会承制</label><br>
+            <label>2019.4.13</label><br>
+            <label>谨以此网站纪念“小旋风、户外 -- 项明龙”过去带给大家的难忘记忆！ </label>
+        </div>
+
+    </div>
+
+</body>
+<script>
+   var str = "life/life_0.html";
+   $(".page_right_content").load(str);
+
+    function clickit(chapter_name){
+       // str = chapter_name;
+        $(".page_right_content").load(chapter_name);
+    }
+
+
+</script>
+
+</html>
